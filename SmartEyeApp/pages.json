@@ -1,0 +1,202 @@
+{
+    "pages": [
+		{
+		    "path": "pages/user/login",
+		    "style": {
+		        "navigationBarTitleText": "登录",
+		        "enablePullDownRefresh": false
+		    }
+		},
+        //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        {
+            "path": "pages/tabbar/tabbar-1/tabbar-1",
+            "style": {
+            }
+        },
+        {
+            "path": "pages/tabbar/tabbar-2/tabbar-2",
+            "style": {
+                "navigationBarTitleText": "统计"
+            }
+        },
+        {
+            "path": "pages/tabbar/tabbar-3/tabbar-3",
+            "style": {
+                "navigationBarTitleText": "菜单"
+            }
+        },
+        {
+            "path": "pages/tabbar/tabbar-4/tabbar-4",
+            "style": {
+                "navigationBarTitleText": "通讯录"
+            }
+        },
+        {
+            "path": "pages/tabbar/tabbar-5/tabbar-5",
+            "style": {
+                "navigationBarTitleText": "个人中心"
+            }
+        },
+        {
+            "path": "pages/tabbar-3-detial/tabbar-3-report/tabbar-3-report",
+            "style": {
+				"navigationBarTitleText": "健康报告"
+			}
+        },
+        {
+            "path": "pages/tabbar-3-detial/tabbar-3-record/tabbar-3-record",
+            "style": {
+				"navigationBarTitleText": "视频电话"
+			}
+        },
+		{
+		    "path": "pages/tabbar-3-detial/tabbar-3-teach/tabbar-3-teach",
+		    "style": {
+				"navigationBarTitleText": "教学管理"
+			}
+		},
+        {
+            "path": "pages/tabbar-3-detial/tabbar-3-see/tabbar-3-see",
+            "style": {
+				"navigationBarTitleText": "家庭监护"
+			}
+        },
+		{
+		    "path": "pages/tabbar/tabbar-1/messages",
+			"style": {
+			    "navigationBarTitleText": "消息通知"
+			}
+		},
+		{
+		    "path": "pages/tabbar/tabbar-1/status",
+			"style": {
+			    "navigationBarTitleText": "状态"
+			}
+		},
+		{
+		    "path": "pages/tabbar/tabbar-5/bind_uid",
+		    "style": {
+				"navigationBarTitleText": "绑定UID"
+			}
+		},
+		{
+		    "path": "pages/tabbar/tabbar-5/help",
+		    "style": {
+				"navigationBarTitleText": "帮助中心"
+			}
+		},
+		{
+		    "path": "pages/tabbar/tabbar-5/setting/language",
+		    "style": {
+				"navigationBarTitleText": "设置语言"
+			}
+		},
+		{
+		    "path": "pages/tabbar/tabbar-5/setting/support",
+		    "style": {
+				"navigationBarTitleText": "支持"
+			}
+		},
+		{
+		    "path": "pages/tabbar/tabbar-5/setting/change_PIN",
+		    "style": {
+				"navigationBarTitleText": "修改PIN"
+			}
+		},
+		{
+		    "path": "pages/tabbar/tabbar-5/setting/about_us",
+		    "style": {
+				"navigationBarTitleText": "关于我们"
+			}
+		},
+		{
+		    "path": "pages/tabbar/tabbar-3/verify_code",
+		    "style": {}
+		},
+		{
+		    "path": "pages/tabbar/tabbar-1/video_replay",
+		    "style": {
+				"navigationBarTitleText": "视频回放"
+			}
+		},
+		{
+		    "path": "pages/tabbar/tabbar-5/setting",
+		    "style": {
+				"navigationBarTitleText": "设置"
+			}
+		},
+		{
+		    "path": "pages/tabbar/tabbar-4/chats",
+		    "style": {
+				"navigationBarTitleText": "聊天"
+			}
+		},
+        {
+            "path": "pages/user/register",
+            "style": {
+                "navigationBarTitleText": "注册",
+                "enablePullDownRefresh": false
+            }
+        },
+		{
+			"path": "pages/user/forget",
+			"style": {
+				"navigationBarTitleText": "忘记密码"
+			}
+		}
+    ],
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "智眼守护",
+        "navigationBarBackgroundColor": "#ffbb98",
+		"enablePullDownRefresh": false
+		
+    },
+    "tabBar": {
+		"height": "65px",
+        "backgroundColor": "#ffbb98",
+        "color": "#919ea3",
+        "selectedColor": "#ffffff",
+        "iconfontSrc": "static/fonts/iconfont1.ttf",
+		"borderStyle": "white",
+		"iconWidth": "45px",
+        "list": [{
+                "pagePath": "pages/tabbar/tabbar-1/tabbar-1",
+                "text": "",
+                "iconPath": "static/img/tabbar/index.png",
+				"selectedIconPath": "static/img/tabbar/index(selected).png"
+            },
+            {
+                "pagePath": "pages/tabbar/tabbar-2/tabbar-2",
+                "text": "",
+                "iconPath": "static/img/tabbar/arrange.png",
+				"selectedIconPath": "static/img/tabbar/arrange(selected).png"
+            },
+            // #ifdef MP-WEIXIN
+            {
+                "pagePath": "pages/tabbar/tabbar-3/tabbar-3",
+                "text": "菜单"
+            },
+            // #endif
+            // #ifndef MP-WEIXIN
+            {
+                "pagePath": "pages/tabbar/tabbar-3/tabbar-3",
+                "iconPath": "static/img/tabbar/appliance.png",
+				"selectedIconPath": "static/img/tabbar/appliance(selected).png"
+            },
+             //#endif
+            {
+                "pagePath": "pages/tabbar/tabbar-4/tabbar-4",
+                "text": "",
+                "iconPath": "static/img/tabbar/contact.png",
+				"selectedIconPath": "static/img/tabbar/contact(selected).png"
+            },
+            {
+                "pagePath": "pages/tabbar/tabbar-5/tabbar-5",
+                "text": "",
+                "iconPath": "static/img/tabbar/user.png",
+				"selectedIconPath": "static/img/tabbar/user(selected).png"
+            }
+        ]
+    }
+}
